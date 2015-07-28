@@ -583,7 +583,6 @@ public class FtpHelper {
 			return connectionOK;
 	}
 		
-	/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - **/
 
 		
 	/**
