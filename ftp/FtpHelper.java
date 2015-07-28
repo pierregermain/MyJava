@@ -583,8 +583,6 @@ public class FtpHelper {
 			return connectionOK;
 	}
 		
-
-		
 	/**
 	 * List Files on the remote server. 
 	 * REQUISITES TO USE THIS METHOD: 
