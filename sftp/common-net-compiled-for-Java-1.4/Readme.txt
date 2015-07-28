@@ -1,5 +1,5 @@
 Readme
-Common-net compiled/modified for Java 1.4.
+Common-net 2.0 compiled/modified for Java 1.4.
 
 The test Java Classes 
 are only files to debug a sftp conection. 
