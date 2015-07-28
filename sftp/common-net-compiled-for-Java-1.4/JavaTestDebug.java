@@ -70,11 +70,11 @@ class JavaTestDebug {
 		FTPs.getReplyCode();
 		FTPs.execPBSZ(0); // RFC2228 requires that the PBSZ subcommand be issued prior to the PROT subcommand. However, TLS/SSL handles blocking of data, so '0' is the only value accepted.
 		FTPs.execPROT("P"); // P(rivate) data channel, which needs certs if "Active". E and S: '536 Requested PROT level not supported by mechanism.'. C is default, but has clear text data channel - http://www.nabble.com/TLS-for-FTP-td6645485.html
-		final String user = "na30";
-		final String pass = "na30";
+		final String user = "user";
+		final String pass = "pwd";
 		FTPs.login(user,pass);
 		FTPs.changeWorkingDirectory("/");
-		final String localPath = "D:\\export\\env\\bona30\\WORK_DIR\\webapps\\desar\\WEB-INF\\files\\Enforcements\\EncryptedFiles\\test.txt";
+		final String localPath = "Ruta al local.txt";
 		java.io.FileInputStream fileStream = new java.io.FileInputStream(localPath);
 		FTPs.setDataTimeout(5000);
 		FTPs.enterLocalPassiveMode(); // Active is the default, which very few clients can suppart in SSL (firewalls can't detect "PORT" command, and thus cant open/map local port). Active will also require keys/certs.
